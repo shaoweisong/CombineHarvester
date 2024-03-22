@@ -150,6 +150,7 @@ class Impacts(CombineToolBase):
                     initialRes.update(utils.get_singles_results(
                     'higgsCombine_initialFit_%(name)s_POI_%(poi)s.MultiDimFit.mH%(mh)s.root' % vars(), [poi], poiList))
             else:
+                
                 initialRes = utils.get_singles_results(
                     'higgsCombine_initialFit_%(name)s.MultiDimFit.mH%(mh)s.root' % vars(), poiList, poiList)
 

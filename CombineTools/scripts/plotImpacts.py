@@ -323,6 +323,8 @@ for page in xrange(n):
         legend2.Draw()
 
     plot.DrawCMSLogo(pads[0], 'CMS', args.cms_label, 0, 0.25, 0.00, 0.00)
+    print(POI_fit[1])
+    print("aaaa")
     s_nom, s_hi, s_lo = GetRounded(POI_fit[1], POI_fit[2] - POI_fit[1], POI_fit[1] - POI_fit[0])
     if not args.blind:
         plot.DrawTitle(pads[1], '#hat{%s} = %s^{#plus%s}_{#minus%s}%s' % (
